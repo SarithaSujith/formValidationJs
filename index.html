@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+			crossorigin="anonymous"
+		/>
+		<title>Form Validation</title>
+	</head>
+	<body>
+		<div class="container">
+      <div class="content">
+        <div class="logo"><img src="https://svgshare.com/i/_go.svg" alt="" /></div>
+        <div class="image"></div>
+        <div class="text">Start for free & get <br />
+          attractive offers today !</div>   
+      </div>
+			<form id="form">
+				<div class="social">
+					<div class="title">Get Started</div>
+					<div class="question">
+						Already have an account? <br />
+						<span>Sign in</span>
+					</div>
+					<div class="btn">
+						<div class="btn-1">
+							<img
+								src="https://img.icons8.com/color/30/000000/google-logo.png"
+							/>Sign Up
+						</div>
+						<div class="btn-2">
+							<img
+								src="https://img.icons8.com/color/30/ffffff/facebook-new.png"
+							/>Sign Up
+						</div>
+					</div>
+
+					<div class="or">Or</div>
+				</div>
+
+				<!-- <div class="title"></div> -->
+				<!-- /**
+        * !username for input 
+      **/-->
+				<div>
+					<label for="username">User Name</label>
+					<i class="fas fa-user"></i>
+					<input type="text" name="username" id="username" placeholder="name" />
+					<i class="fas fa-exclamation-circle failure-icon"></i>
+					<!--added extra failure-icon and sucess icon for stylen-->
+					<i class="fas fa-check-circle success-icon"></i>
+					<div class="error"></div>
+				</div>
+				<!-- /**
+        * !email for input 
+      **/-->
+				<div>
+					<label for="email">Email</label>
+					<i class="far fa-envelope"></i>
+					<input
+						type="email"
+						name="email"
+						id="email"
+						placeholder="abc.gmail.com"
+					/>
+					<i class="fas fa-exclamation-circle failure-icon"></i>
+					<!--added extra failure-icon and sucess icon for stylen-->
+					<i class="fas fa-check-circle success-icon"></i>
+					<div class="error"></div>
+				</div>
+				<!-- /**
+        * !password for input 
+      **/-->
+				<div>
+					<label for="password">Password</label>
+					<i class="fas fa-lock"></i>
+					<input
+						type="password"
+						name="password"
+						id="password"
+						placeholder="password"
+					/>
+					<i class="fas fa-exclamation-circle failure-icon"></i>
+					<!--added extra failure-icon and sucess icon for stylen-->
+					<i class="fas fa-check-circle success-icon"></i>
+					<div class="error"></div>
+				</div>
+				<button type="submit" id="submit">Submit</button>
+			</form>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
